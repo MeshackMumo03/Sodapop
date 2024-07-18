@@ -1,4 +1,4 @@
-package com.example.customerapp;
+package com.example.sodapop;
 
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -12,12 +12,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class OrderActivity extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity {
 
     private EditText inputBranch, inputBrand, inputQuantity;
     private FirebaseAuth auth;
@@ -26,7 +27,7 @@ public class OrderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_order);
+        setContentView(R.layout.activity_main3);
 
         auth = FirebaseAuth.getInstance();
         db = FirebaseFirestore.getInstance();
@@ -58,9 +59,9 @@ public class OrderActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<DocumentReference> task) {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(OrderActivity.this, "Order placed successfully!", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(MainActivity3.this, "Order placed successfully!", Toast.LENGTH_SHORT).show();
                                 } else {
-                                    Toast.makeText(OrderActivity.this, "Order placement failed." + task.getException(), Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(MainActivity3.this, "Order placement failed." + task.getException(), Toast.LENGTH_SHORT).show();
                                 }
                             }
                         });
