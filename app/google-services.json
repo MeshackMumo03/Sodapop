@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "965957096648",
+    "firebase_url": "https://sodapop-10ca6-default-rtdb.firebaseio.com",
+    "project_id": "sodapop-10ca6",
+    "storage_bucket": "sodapop-10ca6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965957096648:android:7493fab78d5142ad5e81fd",
+        "android_client_info": {
+          "package_name": "com.example.sodapop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965957096648-l6i4gif8rp22dml1car5v2e0m1pfgkde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1YRQ5NNbuln4wkdYrqy_NWDYrRLRwvG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "965957096648-l6i4gif8rp22dml1car5v2e0m1pfgkde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
