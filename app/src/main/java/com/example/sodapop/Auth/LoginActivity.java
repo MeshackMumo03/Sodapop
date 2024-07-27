@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         View view = binding.getRoot();
-//Has to be a view
+
         setContentView(view);
         mAuth = FirebaseAuth.getInstance();
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
